@@ -6,7 +6,8 @@ let counter = Number(timer.textContent);
         counter -= 1;
         timer.textContent = counter;
     } else {
+        clearInterval(id);
         alert ("Вы победили в конкурсе!");
     }
 };
-setInterval (runTimer, 1000);
+const id = setInterval (runTimer, 1000);
