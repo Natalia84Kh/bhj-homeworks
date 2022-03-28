@@ -1,11 +1,13 @@
 const img = document.getElementById("cookie");
 let clickerCounter =  document.getElementById("clicker__counter");
 function cookieClicker () {
-    img.width = 100;
+    if (img.width > 200){
+        img.width = 100;
+    } else{
+        img.width = 400;
+    }
     let counter = Number(clickerCounter.textContent);
     counter += 1;
     clickerCounter.textContent = counter;
-
-    img.width = 400;
 };
 img.onclick = cookieClicker;
