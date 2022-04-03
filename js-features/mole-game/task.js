@@ -13,7 +13,7 @@ function click (i) {
         counter = 0;
         counterWin = 0;    
     }
-    if (hole(i).className === 'hole hole_has-mole'){
+    if (holeArr[i].className === 'hole hole_has-mole'){
             counterWin += 1;
             counterDeadMole.textContent = counterWin;
         } else {
